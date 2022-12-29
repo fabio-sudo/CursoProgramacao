@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3B52362A-FCC7-43C2-BAFA-8AF25A31504D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Apresentacao</RootNamespace>
+    <AssemblyName>Apresentacao</AssemblyName>
+    <TargetFrameworkVersion>v4.8.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FrmAluno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAluno.Designer.cs">
+      <DependentUpon>FrmAluno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAlunoCadAltExc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAlunoCadAltExc.Designer.cs">
+      <DependentUpon>FrmAlunoCadAltExc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmControleAlunos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmControleAlunos.Designer.cs">
+      <DependentUpon>FrmControleAlunos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmControleAlunosCadAltExc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmControleAlunosCadAltExc.Designer.cs">
+      <DependentUpon>FrmControleAlunosCadAltExc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCurso.Designer.cs">
+      <DependentUpon>FrmCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCursoCadAltExc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCursoCadAltExc.Designer.cs">
+      <DependentUpon>FrmCursoCadAltExc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMenuPrincipal.Designer.cs">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPeriodo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPeriodo.Designer.cs">
+      <DependentUpon>FrmPeriodo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPeriodoCadAltExc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPeriodoCadAltExc.Designer.cs">
+      <DependentUpon>FrmPeriodoCadAltExc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfessor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfessor.Designer.cs">
+      <DependentUpon>FrmProfessor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmProfessorCadAltExc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmProfessorCadAltExc.Designer.cs">
+      <DependentUpon>FrmProfessorCadAltExc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAluno.resx">
+      <DependentUpon>FrmAluno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAlunoCadAltExc.resx">
+      <DependentUpon>FrmAlunoCadAltExc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmControleAlunos.resx">
+      <DependentUpon>FrmControleAlunos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmControleAlunosCadAltExc.resx">
+      <DependentUpon>FrmControleAlunosCadAltExc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCurso.resx">
+      <DependentUpon>FrmCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCursoCadAltExc.resx">
+      <DependentUpon>FrmCursoCadAltExc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMenuPrincipal.resx">
+      <DependentUpon>FrmMenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPeriodo.resx">
+      <DependentUpon>FrmPeriodo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPeriodoCadAltExc.resx">
+      <DependentUpon>FrmPeriodoCadAltExc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProfessor.resx">
+      <DependentUpon>FrmProfessor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmProfessorCadAltExc.resx">
+      <DependentUpon>FrmProfessorCadAltExc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Negocios\Negocios.csproj">
+      <Project>{0ad77985-447c-463a-8d95-4c53569f80a4}</Project>
+      <Name>Negocios</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ObjetoTransferencia\ObjetoTransferencia.csproj">
+      <Project>{269e70a9-a653-43ca-8490-d2fa834c7dfb}</Project>
+      <Name>ObjetoTransferencia</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\estudanteLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Professor.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PeriodoLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CursoLogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\AlunoCursoLogo.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
